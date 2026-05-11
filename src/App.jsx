@@ -1,322 +1,334 @@
 export default function Portfolio() {
-  const skills = {
-    Languages: ["Java", "SQL", "Shell Scripting"],
-    "DevOps & Tools": ["Git", "GitHub", "Docker", "CI/CD Basics"],
-    "Core Subjects": ["Computer Networks", "DBMS"],
-    Platforms: ["HackerRank", "LeetCode", "CodeChef", "GeeksforGeeks"],
-  };
-
-  const projects = [
-    {
-      title: "Smart Transportation Based Car Pooling System",
-      description:
-        "Developed a ride-sharing system that enables users to share rides efficiently while reducing traffic congestion and pollution.",
-      tech: ["Java", "GitHub", "Database Concepts"],
-    },
-    {
-      title: "Alzheimer’s Disease Detection using Machine Learning",
-      description:
-        "Built a machine learning framework using MRI features to identify early signs of Alzheimer’s disease.",
-      tech: ["Python", "Machine Learning", "Data Analysis"],
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <nav className="fixed top-0 w-full bg-slate-950/90 border-b border-white/10 z-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black text-white font-sans">
+      {/* NAVBAR */}
+      <nav className="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-xl border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-cyan-400">
-            DASARI KRUPA
+          <h1 className="text-2xl font-bold tracking-wide text-cyan-400">
+            Krupa John
           </h1>
 
-          <div className="flex gap-6 text-gray-300">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <div className="hidden md:flex gap-8 text-sm text-gray-300">
+            <a href="#home" className="hover:text-cyan-400 transition">Home</a>
+            <a href="#about" className="hover:text-cyan-400 transition">About</a>
+            <a href="#projects" className="hover:text-cyan-400 transition">Projects</a>
+            <a href="#skills" className="hover:text-cyan-400 transition">Skills</a>
+            <a href="#contact" className="hover:text-cyan-400 transition">Contact</a>
           </div>
         </div>
       </nav>
 
-      <section className="pt-40 pb-24 px-6">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+      {/* HERO SECTION */}
+      <section
+        id="home"
+        className="min-h-screen flex items-center justify-center px-6"
+      >
+        <div className="max-w-7xl w-full grid md:grid-cols-2 gap-14 items-center pt-24">
           <div>
-            <p className="text-cyan-400 uppercase tracking-widest mb-4">
-              Welcome To My Portfolio
+            <p className="uppercase tracking-[6px] text-cyan-400 text-sm mb-5">
+              Software Developer & AI Enthusiast
             </p>
 
-            <h1 className="text-6xl font-black leading-tight mb-6">
-              Hi, I'm <span className="text-cyan-400">KrupaJohn</span>
+            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
+              Building
+              <span className="text-cyan-400"> Modern </span>
+              Intelligent Digital Experiences
             </h1>
 
-            <h2 className="text-3xl text-gray-300 font-semibold mb-8">
-              Java Developer • DevOps Enthusiast
-            </h2>
-
-            <p className="text-lg text-gray-400 leading-relaxed mb-10">
-              Passionate about building modern applications, exploring DevOps technologies, and creating impactful software solutions with creativity and continuous learning.
+            <p className="text-gray-400 text-lg leading-8 mb-10 max-w-xl">
+              Passionate developer focused on AI-powered applications,
+              professional web experiences, and real-world problem solving.
+              Skilled in frontend development, backend integration, databases,
+              and deployment technologies.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-5">
               <a
-                href="#projects"
-                className="bg-cyan-400 text-black px-8 py-4 rounded-2xl font-bold"
+                href="https://github.com/KrupaJohn1"
+                target="_blank"
+                className="px-7 py-4 rounded-2xl bg-cyan-400 text-black font-semibold hover:scale-105 transition duration-300 shadow-2xl shadow-cyan-500/20"
               >
-                View Projects
+                View GitHub
               </a>
 
               <a
                 href="https://www.linkedin.com/in/krupa-john123/"
                 target="_blank"
-                rel="noreferrer"
-                className="border border-cyan-400 text-cyan-300 px-8 py-4 rounded-2xl"
+                className="px-7 py-4 rounded-2xl border border-cyan-400 text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-black transition duration-300"
               >
-                LinkedIn
+                LinkedIn Profile
               </a>
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <div className="bg-white/5 border border-white/10 rounded-[40px] p-10 backdrop-blur-xl shadow-2xl max-w-xl w-full">
-              <h3 className="text-4xl font-bold text-cyan-400 text-center mb-10">
-                Academic Highlights
+          <div className="relative flex justify-center">
+            <div className="absolute w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl animate-pulse"></div>
+
+            <div className="relative bg-white/5 border border-white/10 backdrop-blur-xl p-10 rounded-[35px] shadow-2xl w-full max-w-md hover:scale-105 transition duration-500">
+              <div className="flex justify-between items-center mb-8">
+                <div>
+                  <h2 className="text-2xl font-bold">Krupa John</h2>
+                  <p className="text-gray-400 text-sm mt-1">
+                    Full Stack Developer
+                  </p>
+                </div>
+
+                <div className="w-14 h-14 rounded-full bg-cyan-400 flex items-center justify-center text-black font-bold text-xl">
+                  KJ
+                </div>
+              </div>
+
+              <div className="space-y-5">
+                <div className="bg-black/40 p-5 rounded-2xl border border-white/10">
+                  <p className="text-sm text-gray-400 mb-2">Specialization</p>
+                  <h3 className="text-lg font-semibold">
+                    AI Applications & Web Development
+                  </h3>
+                </div>
+
+                <div className="bg-black/40 p-5 rounded-2xl border border-white/10">
+                  <p className="text-sm text-gray-400 mb-2">Tech Stack</p>
+                  <h3 className="text-lg font-semibold">
+                    HTML • CSS • JavaScript • Python • MySQL
+                  </h3>
+                </div>
+
+                <div className="bg-black/40 p-5 rounded-2xl border border-white/10">
+                  <p className="text-sm text-gray-400 mb-2">Goal</p>
+                  <h3 className="text-lg font-semibold">
+                    Creating impactful and scalable digital products
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section id="about" className="py-28 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-20">
+            <p className="text-cyan-400 uppercase tracking-[5px] text-sm mb-4">
+              About Me
+            </p>
+
+            <h2 className="text-5xl font-bold">
+              Professional Profile
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="bg-white/5 border border-white/10 rounded-[30px] p-10 backdrop-blur-xl">
+              <h3 className="text-2xl font-bold mb-6 text-cyan-400">
+                Who I Am
               </h3>
 
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                  <h3 className="text-4xl font-bold text-cyan-400">7.89</h3>
-                  <p className="text-gray-400 mt-2">CGPA</p>
-                </div>
+              <p className="text-gray-300 leading-8 text-lg">
+                I am a passionate and dedicated developer with strong interest
+                in Artificial Intelligence, modern web development, and
+                real-world software solutions. I enjoy building visually
+                attractive and user-friendly applications with scalable backend
+                systems.
+              </p>
+            </div>
 
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                  <h3 className="text-4xl font-bold text-cyan-400">91.2%</h3>
-                  <p className="text-gray-400 mt-2">Intermediate</p>
-                </div>
+            <div className="bg-white/5 border border-white/10 rounded-[30px] p-10 backdrop-blur-xl">
+              <h3 className="text-2xl font-bold mb-6 text-cyan-400">
+                Career Objective
+              </h3>
 
-                <div className="bg-white/5 rounded-2xl p-6 border border-white/10">
-                  <h3 className="text-4xl font-bold text-cyan-400">100%</h3>
-                  <p className="text-gray-400 mt-2">SSC</p>
-                </div>
+              <p className="text-gray-300 leading-8 text-lg">
+                Seeking opportunities to contribute technical skills, creativity,
+                and problem-solving abilities in a professional environment while
+                continuously learning advanced technologies and building
+                innovative projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section id="projects" className="py-28 px-6 bg-black/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <p className="text-cyan-400 uppercase tracking-[5px] text-sm mb-4">
+              Portfolio
+            </p>
+
+            <h2 className="text-5xl font-bold">
+              Featured Projects
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="bg-white/5 border border-white/10 rounded-[30px] p-8 hover:-translate-y-2 transition duration-300 backdrop-blur-xl">
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="text-2xl font-bold">
+                  NeuroVision AI
+                </h3>
+
+                <span className="px-4 py-2 bg-cyan-400/20 text-cyan-400 rounded-full text-sm">
+                  AI Project
+                </span>
               </div>
 
-              <div className="mt-10 text-center">
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  Passionate about software development, DevOps technologies,
-                  and continuous learning to build impactful and efficient systems.
-                </p>
+              <p className="text-gray-400 leading-8 mb-8">
+                Professional AI-powered brain MRI analysis platform with modern
+                authentication system, image uploads, backend integration, and
+                interactive dashboard experience.
+              </p>
+
+              <div className="flex gap-4 flex-wrap">
+                <a
+                  href="https://github.com/KrupaJohn1/neurovision-ai" 
+                  target="_blank"
+                  className="px-5 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 transition"
+                >
+                  View GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-[30px] p-8 hover:-translate-y-2 transition duration-300 backdrop-blur-xl">
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="text-2xl font-bold">
+                  Smart Transportation Car Pooling System
+                </h3>
+
+                <span className="px-4 py-2 bg-cyan-400/20 text-cyan-400 rounded-full text-sm">
+                  Web App
+                </span>
+              </div>
+
+              <p className="text-gray-400 leading-8 mb-8">
+                Smart transportation-based car pooling system designed to improve
+                ride sharing, reduce travel costs, and provide efficient
+                transportation management.
+              </p>
+
+              <div className="flex gap-4 flex-wrap">
+                <a
+                  href="https://github.com/KrupaJohn1/Smart-Transportation-Based-Car-Pooling-System"
+                  target="_blank"
+                  className="px-5 py-3 bg-cyan-400 text-black rounded-xl font-semibold hover:scale-105 transition"
+                >
+                  View Project
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" className="py-24 px-6">
+      {/* SKILLS */}
+      <section id="skills" className="py-28 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-16">
-            About Me
-          </h2>
-
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-10">
-            <p className="text-xl text-gray-300 leading-relaxed">
-              I am a passionate and self-motivated Information Technology student with strong foundations in Java, SQL, Computer Networks, and DevOps concepts. I enjoy learning new technologies and continuously improving my technical and problem-solving skills.
+          <div className="text-center mb-20">
+            <p className="text-cyan-400 uppercase tracking-[5px] text-sm mb-4">
+              Expertise
             </p>
 
-            <p className="text-lg text-gray-400 leading-relaxed mt-8">
-              My interest lies in software development, automation, cloud technologies, and building efficient systems that solve real-world problems. I am highly interested in understanding how modern applications are developed, deployed, and managed using DevOps practices.
-            </p>
-
-            <p className="text-lg text-gray-400 leading-relaxed mt-8">
-              Along with academics, I actively work on projects, coding platforms, and technical learning to strengthen my practical knowledge. I am a quick learner, team player, and always ready to take on new challenges that help me grow professionally.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
-              <div className="bg-white/5 rounded-2xl p-6 text-center border border-white/10">
-                <h3 className="text-4xl font-bold text-cyan-400">2+</h3>
-                <p className="text-gray-400 mt-2">Major Projects</p>
-              </div>
-
-              <div className="bg-white/5 rounded-2xl p-6 text-center border border-white/10">
-                <h3 className="text-4xl font-bold text-cyan-400">4+</h3>
-                <p className="text-gray-400 mt-2">Coding Platforms</p>
-              </div>
-
-              <div className="bg-white/5 rounded-2xl p-6 text-center border border-white/10">
-                <h3 className="text-4xl font-bold text-cyan-400">100%</h3>
-                <p className="text-gray-400 mt-2">Dedication</p>
-              </div>
-            </div>
+            <h2 className="text-5xl font-bold">
+              Technical Skills
+            </h2>
           </div>
-        </div>
-      </section>
 
-      <section id="skills" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-16">
-            Skills
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {Object.entries(skills).map(([category, items]) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              'HTML5',
+              'CSS3',
+              'JavaScript',
+              'Python',
+              'MySQL',
+              'Flask',
+              'GitHub',
+              'Responsive Design',
+            ].map((skill) => (
               <div
-                key={category}
-                className="bg-white/5 border border-white/10 rounded-3xl p-8"
+                key={skill}
+                className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:bg-cyan-400 hover:text-black transition duration-300 font-semibold"
               >
-                <h3 className="text-2xl font-bold text-cyan-400 mb-6">
-                  {category}
-                </h3>
-
-                <div className="flex flex-wrap gap-4">
-                  {items.map((skill) => (
-                    <span
-                      key={skill}
-                      className="bg-cyan-400/10 text-cyan-300 px-5 py-3 rounded-2xl"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-
-                
+                {skill}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="projects" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-16">
-            Projects
-          </h2>
-
-          <div className="grid lg:grid-cols-2 gap-10">
-            {projects.map((project) => (
-              <div
-                key={project.title}
-                className="bg-white/5 border border-white/10 rounded-3xl p-10"
-              >
-                <h3 className="text-3xl font-bold text-cyan-400 mb-6">
-                  {project.title}
-                </h3>
-
-                <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-4 mb-6">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-white/10 text-gray-200 px-5 py-3 rounded-2xl"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="profiles" className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-16">
-            Coding Profiles
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <a
-              href="https://github.com/Dasarikrupa"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300"
-            >
-              <h3 className="text-2xl font-bold text-cyan-400 mb-4">GitHub</h3>
-              <p className="text-gray-400">Explore my repositories and projects</p>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/krupa-john123/"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300"
-            >
-              <h3 className="text-2xl font-bold text-cyan-400 mb-4">LinkedIn</h3>
-              <p className="text-gray-400">Connect with me professionally</p>
-            </a>
-
-            <a
-              href="https://www.hackerrank.com/profile/22951a1236"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300"
-            >
-              <h3 className="text-2xl font-bold text-cyan-400 mb-4">HackerRank</h3>
-              <p className="text-gray-400">Problem solving and coding practice</p>
-            </a>
-
-            <a
-              href="https://leetcode.com/u/DASARIKRUPA/"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300"
-            >
-              <h3 className="text-2xl font-bold text-cyan-400 mb-4">LeetCode</h3>
-              <p className="text-gray-400">DSA and coding challenge solutions</p>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-24 px-6">
-        <div className="max-w-5xl mx-auto bg-white/5 border border-white/10 rounded-3xl p-12 text-center">
-          <h2 className="text-5xl font-bold mb-8">
-            Contact Me
-          </h2>
-
-          <p className="text-xl text-gray-400 mb-12">
-            Open to internships and fresher opportunities.
+      {/* CONTACT */}
+      <section id="contact" className="py-28 px-6 bg-black/30">
+        <div className="max-w-5xl mx-auto text-center">
+          <p className="text-cyan-400 uppercase tracking-[5px] text-sm mb-4">
+            Contact
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white/5 rounded-2xl p-6">
-              <div className="text-4xl mb-4">📧</div>
-              <p className="text-gray-300">krupadasari2022@gmail.com</p>
-            </div>
+          <h2 className="text-5xl font-bold mb-8">
+            Let's Build Something Amazing
+          </h2>
 
-            <div className="bg-white/5 rounded-2xl p-6">
-              <div className="text-4xl mb-4">📱</div>
-              <p className="text-gray-300">+91 8096353475</p>
-            </div>
+          <p className="text-gray-400 text-lg leading-8 max-w-2xl mx-auto mb-12">
+            Open to internships, collaborations, and professional opportunities.
+            Feel free to connect through LinkedIn, GitHub, or email.
+          </p>
 
-            <div className="bg-white/5 rounded-2xl p-6">
-              <div className="text-4xl mb-4">📍</div>
-              <p className="text-gray-300">Hyderabad</p>
-            </div>
-          </div>
-
-          <div className="flex justify-center gap-6 flex-wrap">
+          <div className="flex flex-wrap justify-center gap-6">
             <a
-              href="https://github.com/Dasarikrupa"
-              target="_blank"
-              rel="noreferrer"
-              className="bg-cyan-400 text-black px-8 py-4 rounded-2xl font-bold"
+              href="mailto:krupadasari2022@gmail.com"
+              className="px-8 py-4 rounded-2xl bg-cyan-400 text-black font-semibold hover:scale-105 transition"
             >
-              GitHub
+              Email Me
             </a>
 
             <a
               href="https://www.linkedin.com/in/krupa-john123/"
               target="_blank"
-              rel="noreferrer"
-              className="border border-cyan-400 text-cyan-300 px-8 py-4 rounded-2xl"
+              className="px-8 py-4 rounded-2xl border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition"
             >
               LinkedIn
             </a>
+
+            <a
+              href="https://github.com/KrupaJohn1"
+              target="_blank"
+              className="px-8 py-4 rounded-2xl border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
+        © 2026 Krupa John • Designed with professionalism and modern UI.
+
+        <div className="flex justify-center gap-6 mt-5 text-sm">
+          <a
+            href="https://github.com/KrupaJohn1"
+            target="_blank"
+            className="hover:text-cyan-400 transition"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/krupa-john123/"
+            target="_blank"
+            className="hover:text-cyan-400 transition"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="mailto:krupadasari2022@gmail.com"
+            className="hover:text-cyan-400 transition"
+          >
+            Email
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
